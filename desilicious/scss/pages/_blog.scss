@@ -1,0 +1,44 @@
+@use "../abstract" as *;
+@use "../base/" as *;
+
+.blog {
+  &__wrapper {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+  }
+
+  &__flashcards {
+    padding: 2rem 1rem;
+    @include mediaQuery(520px) {
+      padding: 1rem;
+    }
+  }
+
+  img {
+    width: 50rem;
+    height: 25rem;
+    border-radius: 2rem;
+    @include mediaQuery(520px) {
+      height: 10rem;
+      width: 30rem;
+    }
+  }
+  h2 {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+  p {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+  &--details {
+    a {
+      margin: 1rem;
+    }
+  }
+  &__btn {
+    padding-top: 2rem;
+  }
+}

@@ -1,0 +1,122 @@
+@use "../abstract" as *;
+@use "../base/" as *;
+
+.menuBeef {
+  &__wrapper {
+    @include unevenGrid(25rem 25rem, 3rem);
+    place-content: center;
+    gap: 15rem;
+    margin-bottom: 3rem;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+      padding: 1rem 1rem;
+    }
+  }
+  .title {
+    padding-top: 5rem;
+    justify-items: center;
+    text-align: center;
+    h2 {
+      letter-spacing: 0.5rem;
+      margin-bottom: 2rem;
+      font-weight: 200;
+    }
+  }
+  .menu {
+    text-align: center;
+    gap: 5rem;
+  }
+
+  img {
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    height: 30rem;
+    border-radius: 2rem;
+    @include mediaQuery(520px) {
+      max-width: 100%;
+      height: 10rem;
+    }
+  }
+}
+
+.menuChicken {
+  &__wrapper {
+    @include unevenGrid(25rem 25rem, 3rem);
+    place-content: center;
+    gap: 15rem;
+    margin-bottom: 3rem;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+      padding: 1rem 1rem;
+    }
+  }
+  .title {
+    padding-top: 5rem;
+    justify-items: center;
+    text-align: center;
+    h2 {
+      letter-spacing: 0.5rem;
+      margin-bottom: 2rem;
+      font-weight: 200;
+    }
+  }
+  .menu {
+    text-align: center;
+    gap: 5rem;
+  }
+
+  img {
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    height: 30rem;
+    border-radius: 2rem;
+    @include mediaQuery(520px) {
+      max-width: 100%;
+      height: 10rem;
+    }
+  }
+}
+
+.menuDessert {
+  &__wrapper {
+    @include unevenGrid(25rem 25rem, 3rem);
+    place-content: center;
+    gap: 15rem;
+    margin-bottom: 3rem;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+      padding: 1rem 1rem;
+    }
+  }
+  .title {
+    padding-top: 5rem;
+    justify-items: center;
+    text-align: center;
+    h2 {
+      letter-spacing: 0.5rem;
+      margin-bottom: 2rem;
+      font-weight: 200;
+    }
+  }
+  .menu {
+    text-align: center;
+    gap: 5rem;
+  }
+
+  img {
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    height: 30rem;
+    border-radius: 2rem;
+    @include mediaQuery(520px) {
+      max-width: 100%;
+      height: 10rem;
+    }
+  }
+}
